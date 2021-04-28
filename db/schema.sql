@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS free_db;
+
+CREATE DATABASE free_db;
