@@ -1,4 +1,4 @@
-const router = require('exoress').Router();
+const router = require('express').Router();
 
 const apiRoutes = require('./api');
 
