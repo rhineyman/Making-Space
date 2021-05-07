@@ -21,7 +21,7 @@ const postData = [{
     user_id: 1,
     category_id: 'miscellaneous'
 }
-];
+]
 
 const postSeeds = () => Post.bulkCreate(postData);
 module.exports = postSeeds;
