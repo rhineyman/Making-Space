@@ -34,4 +34,17 @@ router.get('/', (req, res) => {
       });
   });
 
+  router.get('/login', (req, res) => {
+    res.render('login');
+  });
+
+  router.get('/create', (req, res) => {
+    res.render('create');
+  });
+
+  router.get('/homepage', (req, res) => {
+    res.render('homepage');
+  });
+
+
   module.exports = router;
