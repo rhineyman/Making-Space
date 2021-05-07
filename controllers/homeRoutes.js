@@ -22,10 +22,10 @@ router.get('/', (req, res) => {
     })
       .then(postData => {
         const posts = postData.map(post => post.get({ plain: true }));
-        console.log(posts);
+        console.log(req.session.logged_in);
         res.render('homepage', {
             posts,
-            loggedIn: req.session.loggedIn
+            logged_in: req.session.logged_in
           });
       })
       .catch(err => {
@@ -43,7 +43,7 @@ router.get('/', (req, res) => {
   });
 
   router.get('/homepage', (req, res) => {
-    res.render('homepage');
+    res.render('homepage', {logged_in: req.session.logged_in});
   });
 
 
