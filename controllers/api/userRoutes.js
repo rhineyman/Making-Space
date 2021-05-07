@@ -38,9 +38,7 @@ router.post('/', async (req, res) => {
         res.json(err);
     }
     finally{
-        if (!userData){
-            res.json("Make sure to add the required information for creating a new user");
-        }
+        console.log("hello")
     }
 });
 
