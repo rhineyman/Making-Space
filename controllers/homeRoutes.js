@@ -38,7 +38,7 @@ router.get('/', (req, res) => {
     res.render('login');
   });
 
-  router.get('/create', (req, res) => {
+  router.get('/homepage/create/', (req, res) => {
     res.render('create');
   });
 
