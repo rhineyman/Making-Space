@@ -11,6 +11,7 @@ router.get('/', (req, res) => {
         'id',
         'title',
         'content',
+        'created_at'
       ],
       include: [
         {
@@ -21,6 +22,7 @@ router.get('/', (req, res) => {
     })
       .then(postData => {
         const posts = postData.map(post => post.get({ plain: true }));
+        console.log(posts);
         res.render('homepage', {
             posts,
             loggedIn: req.session.loggedIn
@@ -31,3 +33,5 @@ router.get('/', (req, res) => {
         res.status(500).json(err);
       });
   });
+
+  module.exports = router;
