@@ -1,7 +1,7 @@
 <div class="mb-5 pt-3">
     <a href="/homepage/create/"><button id="create-post" class="button is-primary is-pulled-right">What are you giving away?</button></a>
 
-    <h2 class="title pb-4">homepage: your posts</h2>
+    <h2 class="title pb-4">Current Offers!</h2>
     <hr>
     {{#if posts.length}}
 </div>
@@ -14,6 +14,7 @@
         <p>Posted by {{post.user.username}} on {{format_date post.created_at}}</p>
     </div>
     <p class="card-body">{{post.content}}</p>
+    <button type="button" class="button is-link delete-post-btn" id="delete-post-btn">Claim Post</button>
 </div>
 
 </div>
@@ -23,3 +24,5 @@
 <h6 class="pb-4 has-text-centered is-italic">no posts</h6>
 
 {{/if}}
+
+<script src="/javascript/create.js"></script>
