@@ -8,7 +8,7 @@ const withAuth = require('../../utils/auth');
 router.get('/', (req, res) => {
     Post.findAll({
         attributes: [
-            'id',
+            'user_id',
             'title',
             'content',
         ],
@@ -28,13 +28,13 @@ router.get('/', (req, res) => {
       });
   });
 //find post by id for claim/delete
-  router.get('/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     Post.findOne({
             where: {
                 id: req.params.id
             },
             attributes: [
-                'id',
+                'user_id',
                 'content',
                 'title'
             ],
