@@ -7,6 +7,8 @@
   <title>Free Stuff</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/stylesheet/css.css" />
+
 </head>
 
 <body>
@@ -19,6 +21,8 @@
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <button class="no-button" id="logout">logout</button>
+            <a href="/homepage" class="is-pulled-right"> &larr; back to homepage</a>
+
 
         {{!-- <button href="/create" class="no-button" id="create-post">Create Giveaway</button> --}}
 
