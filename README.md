@@ -8,6 +8,7 @@ An application that allows you to post items that you no longer need and are tak
 - [Usage](#usage)
 - [Contributors](#contributors)
 - [License](#license)
+- [Link](#link)
 - [Contact](#contact)
 
 ## Installation
@@ -22,10 +23,11 @@ Mike Rhiney, Mychal Stanciu, Uriel Cruz, Will Malos
 ## License
 ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
 
-## Contact
-Email: 
+## Link
 
-Github: https://github.com/chapstick24
-        https://github.com/rhineyman
-        https://github.com/ucruz2025
-        https://github.com/wmalos
+## Contact
+Github:
+https://github.com/chapstick24
+https://github.com/rhineyman
+https://github.com/ucruz2025
+https://github.com/wmalos
