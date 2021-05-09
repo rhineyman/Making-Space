@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Posts } = require('../../models');
+const { User, Post } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
@@ -57,13 +57,15 @@ router.get('/:id', (req, res) => {
         });
 });
 //Create new post
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
+  console.log('im here')
   Post.create({
           title: req.body.title,
           content: req.body.content,
           user_id: req.session.user_id
       })
-      .then(postData => res.json(postData))
+      .then(postData => {console.log(postData);
+        res.json(postData)})
       .catch(err => {
           console.log(err);
           res.status(500).json(err);
